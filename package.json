@@ -4,6 +4,7 @@
   "private": true,
   "dependencies": {
     "custom-react-scripts": "0.2.2",
+    "node-gyp": "^3.8.0",
     "react": "^16.8.4",
     "react-dom": "^16.8.4"
   },
