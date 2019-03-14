@@ -5,7 +5,7 @@ import FormContainer from '../FormContainer/FormContainer';
 import classes from "./ParkingLot.module.css";
 
 const parkingLot = () => {
-    const [spaceOne, setSpaceOne] = useState({id: 1, name: "Chase", classTaken: "Level 2", reserved: true, form: false});
+    const [spaceOne, setSpaceOne] = useState({id: 1, name: "", classTaken: "", reserved: false, form: false});
     const [spaceTwo, setSpaceTwo] = useState({id: 2, name: "", classTaken: "", reserved: false, form: false});
     const [spaceThree, setSpaceThree] = useState({id: 3, name: "", classTaken: "", reserved: false, form: false});
     const [spaceFour, setSpaceFour] = useState({id: 4, name: "", classTaken: "", reserved: false, form: false});
