@@ -13,12 +13,9 @@
     input {
       width: .5em;
     }
-    .container {
+    .App {
       margin-left: 0;
       margin-right: 0;
       grid-template-columns: 30% 30% 30%;
-    }
-    .button {
-      position: relative;
     }
   }
