@@ -6,3 +6,10 @@
     width: 100%;
     font-size: 1.1rem;
 }
+
+@media only screen and (max-height: 600px) {
+    .Footer{
+      position: relative;
+      font-size: 1em;
+    }
+}

@@ -5,7 +5,7 @@ import Footer from './components/ui/Footer/Footer';
 import classes from './App.module.css';
 /*
 Next Steps:
-- Start Styling
+- Media Query for screen under 650px in height
 */
 
 class App extends Component {

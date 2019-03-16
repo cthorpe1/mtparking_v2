@@ -8,6 +8,7 @@
 @media only screen and (max-width: 600px) {
     body {
       font-size: .8em;
+      overflow: scroll;
     }
     input {
       width: .5em;
