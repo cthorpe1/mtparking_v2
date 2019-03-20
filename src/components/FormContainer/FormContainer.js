@@ -35,7 +35,7 @@ const formContainer = (props) => {
             <h4>Parking Space {props.space.id}</h4>
             <form onSubmit={formSubmitHandler} className={classes.Form}>
                 <input name="name" 
-                    placeholder="Please enter your name" 
+                    placeholder=" Please enter your name" 
                     value={props.space.name}
                     type="text"
                     onChange={(e) => nameInputHandler(e.target.value)}
@@ -45,7 +45,7 @@ const formContainer = (props) => {
                     <option value="Foundations">Foundations MT</option>
                     <option value="Level 1">Level 1 MT</option>
                     <option value="Level 2">Level 2 MT</option>
-                    <option value="Keiki Class">Keiki MT</option>
+                    <option value="Keiki MT">Keiki MT</option>
                     <option value="TRX/HIIT">TRX/HIIT</option>
                     <option value="Yoga">Yoga</option>
                     <option value="Coaching">Coaching</option>
