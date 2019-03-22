@@ -1,5 +1,5 @@
 import React from 'react';
-
+import Backdrop from './Backdrop/Backdrop';
 import classes from './FormContainer.module.css';
 
 const formContainer = (props) => {
@@ -8,7 +8,7 @@ const formContainer = (props) => {
         newSpace.name = value;
         props.setSpace(newSpace);
     };
-
+    
     const formSubmitHandler = (e) => {
         const name = e.target[0].value;
         const classTaken = e.target[1].value;
@@ -28,32 +28,46 @@ const formContainer = (props) => {
     };
 
     return (
+      <React.Fragment>
+        <Backdrop show="true" />
         <div className={classes.FormContainer}>
+          <div className={classes.BackArrowContainer}>
             <a onClick={goBack}>
-              <i title="Go Back" className="fa fa-arrow-left"></i>
+              <i className="fa fa-arrow-left"></i>            
             </a>
-            <h4>Parking Space {props.space.id}</h4>
-            <form onSubmit={formSubmitHandler} className={classes.Form}>
-                <input name="name" 
-                    placeholder="Please enter your name" 
-                    value={props.space.name}
-                    type="text"
-                    onChange={(e) => nameInputHandler(e.target.value)}
-                    required />
+          </div>
+          <h4>Parking Space {props.space.id}</h4>
+          <form onSubmit={formSubmitHandler} className={classes.Form}>
+            <ul className={classes.Flex}>
+              <li>
+                <label>Enter Name</label>
+                <input type="text" 
+                       id="name" 
+                       placeholder="Enter your name here" 
+                       value={props.space.name}
+                       onChange={(e) => nameInputHandler(e.target.value)}/>
+              </li>
+              <li>
+                <label>Select your class</label>
                 <select name="classes" required>
-                    <option value="">Please select your class</option>
-                    <option value="Foundations">Foundations MT</option>
-                    <option value="Level 1">Level 1 MT</option>
-                    <option value="Level 2">Level 2 MT</option>
-                    <option value="Keiki Class">Keiki MT</option>
-                    <option value="TRX/HIIT">TRX/HIIT</option>
-                    <option value="Yoga">Yoga</option>
-                    <option value="Coaching">Coaching</option>
-                    <option value="Private Lesson">Private Lesson</option>
+                      <option value="">Select your class</option>
+                      <option value="Foundations">Foundations MT</option>
+                      <option value="Level 1">Level 1 MT</option>
+                      <option value="Level 2">Level 2 MT</option>
+                      <option value="Keiki Class">Keiki MT</option>
+                      <option value="TRX/HIIT">TRX/HIIT</option>
+                      <option value="Yoga">Yoga</option>
+                      <option value="Coaching">Coaching</option>
+                      <option value="Private Lesson">Private Lesson</option>
                 </select>
+              </li>
+              <li>
                 <input id="formSubmit" type="submit" value="Reserve Space" />
-            </form>
+              </li>
+            </ul>
+          </form>
         </div>
+      </React.Fragment>
     )
 };
 
