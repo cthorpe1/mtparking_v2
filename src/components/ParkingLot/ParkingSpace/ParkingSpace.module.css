@@ -12,20 +12,17 @@
 .ParkingSpace button {
     background-color: #4b809b;
     width: 100%;
-    padding: 13px;
+    padding: 15px;
     border: none;
     color: white;
-    text-shadow: 1px 1px 1px black;
     text-align: center;
     text-decoration: none;
     display: inline-block;
-    font-size: 14px;
+    font-size: 1.2em;
     cursor: pointer;
     border-radius: 5px;
-
 }
 
 .CheckedOut button {
     background-color:#4c6471 ;
-    
 }

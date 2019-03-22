@@ -26,39 +26,43 @@
 }
 
 .Flex input[type="text"], select{
-    padding: 8px;
+    padding: 13px;
     width: 60%;
-    /*border: none;*/
-    border-bottom: 1px solid black;
-    margin-bottom: 3%;
     margin-right: 10%;
     box-sizing: content-box;
+}
+
+.Flex option {
+    font-size: 1.2em;
 }
 
 .Flex input[type="submit"] {
     background-color: #305A72;
     border: none;
     color: white;
-    text-align: center;
     text-decoration: none;
     font-size: 18px;
-    width: 90%;
     cursor: pointer;
-    padding: 13px;
+    padding: 18px;
     border-radius: 5px;
-    margin-bottom: 0;
 }
+
 
 .Flex li {
     list-style-type: none;
     display: flex;
     margin-top: 3%;
     justify-content: space-between;
+    align-items: center;
 }
 
-.Flex li:last-child {
-    margin: 0;
+.Flex li:nth-child(3) {
+    margin-top: 3%;
+    margin-right: 10%;
+    float: right;
 }
+
 .Flex li label {
     font-weight: bold;
+    margin-left: 5%;
 }
