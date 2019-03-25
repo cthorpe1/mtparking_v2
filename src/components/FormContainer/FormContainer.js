@@ -48,7 +48,7 @@ const formContainer = (props) => {
                        onChange={(e) => nameInputHandler(e.target.value)}/>
               </li>
               <li>
-                <label>Select your class</label>
+                <label>Select Your Class</label>
                 <select name="classes" required>
                       <option value="">Select your class</option>
                       <option value="Foundations">Foundations MT</option>
