@@ -19,7 +19,7 @@ const space = (props) => {
 
   return (
     <div className={classes.ParkingSpace}>
-      <h4>Parking Space {props.space.id}</h4>
+      <h3>Parking Space {props.space.id}</h3>
       {
       (props.space.reserved === false)
       ? <div>

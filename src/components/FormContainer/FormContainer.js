@@ -36,7 +36,7 @@ const formContainer = (props) => {
               <i className="fa fa-arrow-left"></i>            
             </a>
           </div>
-          <h4>Parking Space {props.space.id}</h4>
+          <h3>Parking Space {props.space.id}</h3>
           <form onSubmit={formSubmitHandler} className={classes.Form}>
             <ul className={classes.Flex}>
               <li>
