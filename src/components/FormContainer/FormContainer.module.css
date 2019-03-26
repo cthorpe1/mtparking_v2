@@ -1,3 +1,22 @@
+@-webkit-keyframes grow {
+    0% {    
+      position: absolute;
+      top: 0;
+      left: 0;
+      height: 0%;
+      width: 95%;
+      z-index: 200;
+    }
+    100% {
+      position: absolute;
+      top: 0;
+      left: 0;
+      height: 95%;
+      width: 100%;
+      z-index: 200;
+    }
+  }
+  
 @keyframes grow {
   0% {    
     position: absolute;
@@ -15,6 +34,15 @@
     width: 100%;
     z-index: 200;
   }
+}
+
+@-webkit-keyframes children {
+    0% {
+        opacity: 0;
+     }
+     100% {
+        opacity: 1; 
+     }
 }
 
 @keyframes children {
