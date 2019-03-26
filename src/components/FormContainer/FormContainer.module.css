@@ -80,6 +80,7 @@
 }
 
 .Flex input[type="text"], select{
+    -webkit-appearance: none;
     padding: 13px;
     width: 60%;
     margin-right: 10%;
