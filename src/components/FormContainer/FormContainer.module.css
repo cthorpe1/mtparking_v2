@@ -75,8 +75,9 @@
 .BackArrowContainer a {
     cursor: pointer;
     position: absolute;
-    top: 3px;
-    left: 5px;
+    top: 5px;
+    left: 7px;
+    font-size: 1.2em;
 }
 
 .Flex input[type="text"], select{
