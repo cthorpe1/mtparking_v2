@@ -24,12 +24,13 @@ const space = (props) => {
       (props.space.reserved === false)
       ? <div>
           <p>Currently Available</p>
-          <p style={{"visibility":"hidden"}}>alignment</p>
+          <p className={classes.Spacer} style={{"visibility":"hidden"}}>alignment</p>
           <button onClick={formToggler}>Check In</button>
         </div>
       : <div className={classes.CheckedOut}>
           <p>Checked Out By: {props.space.name}</p>
           <p>Taking Class: {props.space.classTaken}</p>
+          <p>Leaving At: {props.space.leaving}</p>
           <button onClick={checkOutOfSpace}>Check Out</button>
         </div>
       }
