@@ -4,11 +4,11 @@ import Banner from './Banner/Banner';
 
 import classes from "./Header.module.css";
 
-const header = () => (
+const Header = () => (
     <div className={classes.Header}>
       <SiteHeader />
       <Banner />
     </div>
 );
 
-export default header;
+export default Header;

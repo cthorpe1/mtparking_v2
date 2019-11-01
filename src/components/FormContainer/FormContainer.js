@@ -2,7 +2,7 @@ import React from "react";
 import Backdrop from "./Backdrop/Backdrop";
 import classes from "./FormContainer.module.css";
 
-const formContainer = props => {
+const FormContainer = props => {
   const nameInputHandler = value => {
     const newSpace = { ...props.space };
     newSpace.name = value;
@@ -95,4 +95,4 @@ const formContainer = props => {
   );
 };
 
-export default formContainer;
+export default FormContainer;

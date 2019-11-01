@@ -4,7 +4,7 @@ import FormContainer from "../FormContainer/FormContainer";
 
 import classes from "./ParkingLot.module.css";
 
-const parkingLot = () => {
+const ParkingLot = () => {
   const [spaceOne, setSpaceOne] = useState({
     id: 1,
     name: "",
@@ -88,4 +88,4 @@ const parkingLot = () => {
   );
 };
 
-export default parkingLot;
+export default ParkingLot;

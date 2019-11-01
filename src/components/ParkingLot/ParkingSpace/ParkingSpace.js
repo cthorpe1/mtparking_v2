@@ -2,7 +2,7 @@ import React from 'react';
 
 import classes from './ParkingSpace.module.css';
 
-const space = (props) => {
+const Space = (props) => {
   const formToggler = () => {
     let newSpace = {...props.space};
     newSpace.form = !newSpace.form;
@@ -38,4 +38,4 @@ const space = (props) => {
   )
 };
 
-export default space;
+export default Space;
